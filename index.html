@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Snake Game</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div id="passwordScreen">
+    <h1>Who Made This Game?</h1>
+    <input type="text" id="passwordInput" placeholder="Enter Password">
+    <button onclick="checkPassword()">Submit</button>
+    <p id="passwordError" class="error"></p>
+  </div>
+
+  <div id="difficultyScreen" style="display:none;">
+    <h1>Select Difficulty</h1>
+    <button onclick="startGame('easy')">Easy</button>
+    <button onclick="startGame('medium')">Medium</button>
+    <button onclick="startGame('hard')">Hard</button>
+  </div>
+
+  <div id="gameScreen" style="display:none;">
+    <canvas id="gameCanvas" width="600" height="400"></canvas>
+    <div id="sidePanel">
+      <h2>Score: <span id="score">0</span></h2>
+      <h3>Controls</h3>
+      <p>⬆ Up Arrow</p>
+      <p>⬇ Down Arrow</p>
+      <p>⬅ Left Arrow</p>
+      <p>➡ Right Arrow</p>
+    </div>
+  </div>
+
+  <div id="gameOverScreen" style="display:none;">
+    <h1>Game Over!</h1>
+    <p>Your Score: <span id="finalScore"></span></p>
+    <button onclick="goToDifficulty()">Restart</button>
+  </div>
+
+  <script src="js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,26 @@
+body {
+  font-family: Arial, sans-serif;
+  background: linear-gradient(to right, #232526, #414345);
+  color: white;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+canvas {
+  border: 2px solid white;
+  background: #111;
+  display: block;
+  margin: 20px auto;
+}
+button {
+  margin: 10px;
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+}
+#error { color: red; }
+#sidePanel {
+  margin-top: 20px;
+}
